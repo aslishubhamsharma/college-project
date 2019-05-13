@@ -13,6 +13,11 @@ import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeService } from './shared/employee.service';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { FacebookComponent } from './facebook/facebook.component';
+import { InstagramComponent } from './instagram/instagram.component';
+import { TwitterComponent } from './twitter/twitter.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +26,10 @@ import { HeaderComponent } from './header/header.component';
     EmployeeListComponent,
     EmployeeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    FacebookComponent,
+    InstagramComponent,
+    TwitterComponent
   ],
   imports: [
     BrowserModule,

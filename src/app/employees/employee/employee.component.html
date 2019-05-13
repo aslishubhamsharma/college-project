@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid">
       
-<h1 class="display-4">Register Yourself</h1>
+<h1 class="display-4">Get in Touch</h1>
 <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" class="abc">
   <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
   <div class="form-group">
@@ -8,14 +8,17 @@
     <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">This field is required.</div>
   </div>
   <div class="form-group">
-    <input name="position" #position="ngModel" [(ngModel)]="service.formData.position" class="form-control" placeholder="Position">
+    <input name="position" #position="ngModel" [(ngModel)]="service.formData.position" class="form-control" placeholder="Address" required>
+    <div *ngIf="position.invalid && position.touched" class="validation-error">This field is required.</div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <input name="empCode" #empCode="ngModel" [(ngModel)]="service.formData.empCode" class="form-control" placeholder="Emp. code">
+      <input name="empCode" #empCode="ngModel" [(ngModel)]="service.formData.empCode" class="form-control" placeholder="Profile" required>
+      <div *ngIf="empCode.invalid && empCode.touched" class="validation-error">This field is required.</div> 
     </div>
     <div class="form-group  col-md-6">
-      <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control" placeholder="Mobile">
+      <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control" placeholder="Mobile" required>
+      <div *ngIf="mobile.invalid && mobile.touched" class="validation-error">This field is required.</div>
     </div>
   </div>
   <div class="form-group">
