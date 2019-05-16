@@ -35,10 +35,14 @@ export class EmployeeComponent implements OnInit {
     let data =form.value;
   
     this.firestore.collection('employees').add(data);
-    this.resetForm(form);
+    this.resetForm(form);   
+    
+  }
 
-    
-    
+  clickMethod(name: string) {
+    if(confirm("Are you sure to Submit Details "+name)) {
+      //console.log("Implement delete functionality here");
+    }
   }
 }
 
