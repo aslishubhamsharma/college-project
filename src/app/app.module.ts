@@ -16,6 +16,8 @@ import { HeaderComponent } from './header/header.component';
 import { FacebookComponent } from './facebook/facebook.component';
 import { InstagramComponent } from './instagram/instagram.component';
 import { TwitterComponent } from './twitter/twitter.component';
+import { LoginComponent } from './login/login.component';
+
 
 // this is modified
 
@@ -29,7 +31,8 @@ import { TwitterComponent } from './twitter/twitter.component';
     HeaderComponent,
     FacebookComponent,
     InstagramComponent,
-    TwitterComponent
+    TwitterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
