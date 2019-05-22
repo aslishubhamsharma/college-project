@@ -39,10 +39,10 @@ export class EmployeeComponent implements OnInit {
     
   }
 
-  clickMethod(name: string) {
-    if(confirm("Are you sure to Submit Details "+name)) {
-      //console.log("Implement delete functionality here");
-    }
+  clickMethod() {
+      confirm("Submit Data");
+      
+    
   }
 }
 
