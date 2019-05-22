@@ -1,11 +1,11 @@
-.a{
+.jumbotron{
 
-    width: 40%;
-    text-align: center;
-}
+    background-color: white;
+    text-align:left;
+          }
 
 label{
 
-    font-weight: bold;
-
-}
+    font-weight:bold;
+    
+     }
