@@ -24,11 +24,18 @@ export class EmployeeComponent implements OnInit {
     from.resetForm();
     this.service.formData={
 
-      id: null,
-      fullName: '',
-      position: '',
-      empCode: '',
-      mobile: '',
+      id:'null',
+      comment:'',
+      fax:'',
+      location:'',
+      lastcompany:'',
+      firstName: '',
+      lastname:'',
+      email: '',
+      profile: '',
+      salary: '',
+      mobile:'',
+      select:'',
     }
   }
   onSubmit(form: NgForm) {
@@ -41,6 +48,7 @@ export class EmployeeComponent implements OnInit {
 
   clickMethod() {
       confirm("Submit Data");
+      alert("Your data is submitted. We will contact you soon");
       
     
   }

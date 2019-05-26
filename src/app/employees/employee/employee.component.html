@@ -1,28 +1,90 @@
-<div class="jumbotron jumbotron-fluid">
-      
-<h1 class="display-4">Get in Touch</h1>
-<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" class="abc">
-  <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
-  <div class="form-group">
-    <input name="fullName" #fullName="ngModel" [(ngModel)]="service.formData.fullName" class="form-control" placeholder="Full name" required>
-    <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">This field is required.</div>
-  </div>
-  <div class="form-group">
-    <input name="position" #position="ngModel" [(ngModel)]="service.formData.position" class="form-control" placeholder=" Email-Address" required>
-    <div *ngIf="position.invalid && position.touched" class="validation-error">This field is required.</div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <input name="empCode" #empCode="ngModel" [(ngModel)]="service.formData.empCode" class="form-control" placeholder="Profile" required>
-      <div *ngIf="empCode.invalid && empCode.touched" class="validation-error">This field is required.</div> 
-    </div>
-    <div class="form-group  col-md-6">
-      <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control" placeholder="Mobile" required>
-      <div *ngIf="mobile.invalid && mobile.touched" class="validation-error">This field is required.</div>
-    </div>
-  </div>
-  <div class="form-group">
-    <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info" (click)="clickMethod('name')">SUBMIT</button>
-  </div>
-</form>
- </div>
+<div class="card mb-3" style="max-width:100%;">
+  <div class="card-header text-center"><h1 class="text-uppercase mb-4 font-weight-bold">Get In Touch</h1></div>
+    <div class="row no-gutters">
+      <div class="col-md-4">
+            <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" class="abc">
+                    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input name="firstName" #firstName="ngModel" [(ngModel)]="service.formData.firstName" class="form-control" placeholder="First Name" required>
+                          <div *ngIf="firstName.invalid && firstName.touched" class="validation-error">This field is required.</div> 
+                        </div>
+                        <div class="form-group  col-md-6">
+                          <input name="lastName" #lastName="ngModel" [(ngModel)]="service.formData.lastName" class="form-control" placeholder="Last Name" required>
+                          <div *ngIf="lastName.invalid && lastName.touched" class="validation-error">This field is required.</div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control" placeholder="Mobile" required>
+                          <div *ngIf="mobile.invalid && mobile.touched" class="validation-error">This field is required.</div> 
+                        </div>
+                        <div class="form-group  col-md-6">
+                          <input name="fax" #fax="ngModel" [(ngModel)]="service.formData.fax" class="form-control" placeholder="Fax No." required>
+                          <div *ngIf="fax.invalid && fax.touched" class="validation-error">This field is required.</div>
+                        </div>
+                      </div>
+                    <div class="form-group">
+                      <input name="email" #email="ngModel" [(ngModel)]="service.formData.email" class="form-control" placeholder=" Email-Address" required>
+                      <div *ngIf="email.invalid && email.touched" class="validation-error">This field is required.</div>
+                    </div>
+
+                    <div class="form-group col-md-5">
+                        <label for="exampleFormControlSelect1">Year Of Experience</label>
+   
+                   <select class="form-control" id="exampleFormControlSelect2" name="select" #select="ngModel" [(ngModel)]="service.formData.select" class="form-control" placeholder="Select" required>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                        </select>
+                      </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <input name="profile" #profile="ngModel" [(ngModel)]="service.formData.profile" class="form-control" placeholder="Profile" required>
+                        <div *ngIf="profile.invalid && profile.touched" class="validation-error">This field is required.</div> 
+                      </div>
+                      <div class="form-group  col-md-6">
+                        <input name="salary" #salary="ngModel" [(ngModel)]="service.formData.salary" class="form-control" placeholder="Expected Salary" required>
+                        <div *ngIf="salary.invalid && salary.touched" class="validation-error">This field is required.</div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <input name="lastcompany" #lastcompany="ngModel" [(ngModel)]="service.formData.lastcompany" class="form-control" placeholder=" Last Company You Worked For" required>
+                        <div *ngIf="lastcompany.invalid && lastcompany.touched" class="validation-error">This field is required.</div>
+                      </div>
+
+
+                      <div class="form-group col-md-6">
+                          <label for="exampleFormControlSelect1">Are you willing to relocate</label>
+     
+                     <select class="form-control" id="exampleFormControlSelect2" name="location" #location="ngModel" [(ngModel)]="service.formData.location" class="form-control" placeholder="Select" required>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                       <textarea   name="comment" #comment="ngModel" [(ngModel)]="service.formData.comment" class="form-control" placeholder="Comments/Questions/Query" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      <div class="form-group">
+                      <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info" (click)="clickMethod('name')">SUBMIT</button>
+                    </div>
+                  </form>
+               
+      </div>
+      <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Working</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
