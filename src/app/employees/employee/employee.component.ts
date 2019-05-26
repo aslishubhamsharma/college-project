@@ -48,7 +48,7 @@ export class EmployeeComponent implements OnInit {
 
   clickMethod() {
       confirm("Submit Data");
-      alert("Your data is submitted. We will contact you soon");
+      alert("Your data is submitted.We will contact you soon...");
       
     
   }
