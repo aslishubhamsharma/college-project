@@ -17,6 +17,7 @@ import { FacebookComponent } from './facebook/facebook.component';
 import { InstagramComponent } from './instagram/instagram.component';
 import { TwitterComponent } from './twitter/twitter.component';
 import { LoginComponent } from './login/login.component';
+import { AboutComponent } from './about/about.component';
 
 
 // this is modified
@@ -33,6 +34,7 @@ import { LoginComponent } from './login/login.component';
     InstagramComponent,
     TwitterComponent,
     LoginComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
