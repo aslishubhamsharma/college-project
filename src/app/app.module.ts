@@ -20,6 +20,8 @@ import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { KnowmoreComponent } from './knowmore/knowmore.component';
 import { CarrerComponent } from './carrer/carrer.component';
+import { DemandComponent } from './demand/demand.component';
+import { MobileComponent } from './mobile/mobile.component';
 
 
 // this is modified
@@ -39,6 +41,8 @@ import { CarrerComponent } from './carrer/carrer.component';
     AboutComponent,
     KnowmoreComponent,
     CarrerComponent,
+    DemandComponent,
+    MobileComponent,
   ],
   imports: [
     BrowserModule,
