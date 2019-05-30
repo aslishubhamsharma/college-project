@@ -13,5 +13,7 @@ export class Employee {
         public fax:string,
         public select:string,
         public lastcompany:string,
+        
+
         ) {}
 }

@@ -19,6 +19,7 @@ import { TwitterComponent } from './twitter/twitter.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { KnowmoreComponent } from './knowmore/knowmore.component';
+import { CarrerComponent } from './carrer/carrer.component';
 
 
 // this is modified
@@ -37,6 +38,7 @@ import { KnowmoreComponent } from './knowmore/knowmore.component';
     LoginComponent,
     AboutComponent,
     KnowmoreComponent,
+    CarrerComponent,
   ],
   imports: [
     BrowserModule,

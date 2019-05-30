@@ -6,13 +6,14 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { KnowmoreComponent } from './knowmore/knowmore.component';
+import { CarrerComponent } from './carrer/carrer.component';
 
 
 const routes: Routes = [
 
 
   {path:'employee',component:EmployeeComponent},
-  {path:'login',component:LoginComponent},
+  {path:'carrer',component:CarrerComponent},
   {path:'about',component:AboutComponent},
   {path:'about/knowmore',component:KnowmoreComponent}
 ];
