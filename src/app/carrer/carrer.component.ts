@@ -12,4 +12,14 @@ export class CarrerComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  s1() {
+    alert("Redirecting to the Contact");
+  }
+  s2() {
+    alert("Redirecting to the Contact");
+  }
+  s3() {
+    alert("Redirecting to the Contact");
+  }
 }

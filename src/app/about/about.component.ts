@@ -12,4 +12,13 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  s1() {
+    alert("Redirecting to the page");
+    
+    
+  
 }
+
+}
+
+

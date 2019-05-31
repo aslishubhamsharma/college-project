@@ -8,3 +8,9 @@ background-color: skyblue;
 
     text-align:center;
 }
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
