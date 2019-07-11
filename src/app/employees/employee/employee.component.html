@@ -1,7 +1,12 @@
+
+<!--Form Starts Here!! -->
 <div class="card mb-3" style="max-width:100%;">
   <div class="card-header text-center"><h1 class="text-uppercase mb-4 font-weight-bold">Get In Touch</h1></div>
     <div class="row no-gutters">
       <div class="col-md-4">
+
+        <!--Form Code Start Here-->
+
             <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" class="abc">
                     <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
                     <div class="form-row">
@@ -77,8 +82,9 @@
                       <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info" (click)="clickMethod('name')">SUBMIT</button>
                     </div>
                   </form>
-               
+                  <!--Form Code End Here-->    
       </div>
+      <!--Another Div Block Start Here-->
       <div class=" bg-light col-md-8">
             <div class="card-body">
               <h5 class="card-title text-uppercase mb-4 font-weight-bold">Fill This Form To Reach Us</h5>
@@ -87,5 +93,7 @@
                   We are a learning environment and sell the products of our learning. We are a diverse people with diverse skills, capable and experienced to deliver a range of Web and Mobile business solutions. We are driven by values which you expecially like in your associates, partners and employees; Value for Money, Quality and Responsiveness.</small></p>
             </div>
           </div>
+          <!--Div block end Here-->>
         </div>
       </div>
+      <!--End of the Form Block-->
